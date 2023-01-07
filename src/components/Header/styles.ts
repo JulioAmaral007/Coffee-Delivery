@@ -7,6 +7,10 @@ export const HeaderContainer = styled.header`
   justify-content: center;
   height: 6.5rem;
   background: ${(props) => props.theme.colors['base-background']};
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
 
   > div {
     width: 100%;

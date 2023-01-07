@@ -21,7 +21,7 @@ Durante este desafio, utilizamos conceitos um pouco mais avançados desenvolvend
 
 ## 🚧 Layout
 
-<a href="https://www.figma.com/file/AVxuxrAqFymlq9K5GvqqwJ/Coffee-Delivery-(Copy)?node-id=0%3A1&t=JUsDPXXYHICIGXXl-0" target="_blank">
+<a href="https://www.figma.com/file/BooxfyEUUwqll4S1vTcGm8/Coffee-Delivery-(Copy)?t=kmjSeD6XSUyuLSCF-0" target="_blank">
 <img src="https://user-images.githubusercontent.com/71772559/178192253-4fe4757c-de57-4878-a38c-a483c25670b1.png" />
 </a>
 

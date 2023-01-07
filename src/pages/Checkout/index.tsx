@@ -1,7 +1,13 @@
+import { CheckoutForm } from './components/checkoutForm'
+import { SelectedCoffees } from './components/selectedCoffees'
+import { CheckoutContainer } from './styles'
+
 export function Checkout() {
   return (
-    <main>
-      <h1>Meu histórico</h1>
-    </main>
+    <CheckoutContainer className="container">
+      <CheckoutForm />
+
+      <SelectedCoffees />
+    </CheckoutContainer>
   )
 }
