@@ -1,6 +1,6 @@
 import { RegularText, TitleText } from '../../components/Typograph'
 import { SuccessContainer, SuccessDetailsContainer } from './styles'
-import coffeeSuccess from '../../assets/illustration.svg'
+import coffeeSuccess from '../../assets/moto-delivery.svg'
 import { InfoWithIcon } from '../../components/infoWithIcon'
 import { CurrencyDollar, MapPin, Timer } from 'phosphor-react'
 import { useTheme } from 'styled-components'
