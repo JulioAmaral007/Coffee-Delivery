@@ -23,5 +23,5 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
         {error && <RegularText size="s">{error}</RegularText>}
       </InputWrapper>
     )
-  }
+  },
 )

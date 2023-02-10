@@ -1,5 +1,4 @@
 import { ShoppingCart } from 'phosphor-react'
-import coffeeImg from '../../../../assets/Type=Americano.png'
 import { RegularText, TitleText } from '../../../../components/Typograph'
 import { QuantityInput } from '../../../../components/quantityInput'
 import {

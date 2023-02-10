@@ -13,7 +13,7 @@ interface CartContextType {
   addCoffeeToCart: (coffee: CartItem) => void
   changeCartItemQuantity: (
     cartItemId: number,
-    type: 'increase' | 'decrease'
+    type: 'increase' | 'decrease',
   ) => void
   removeCartItem: (cartItemId: number) => void
   cleanCart: () => void
@@ -44,7 +44,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
 
   function addCoffeeToCart(coffee: CartItem) {
     const coffeeAlreadyExistsInCart = cartItems.findIndex(
-      (cartItem) => cartItem.id === coffee.id
+      (cartItem) => cartItem.id === coffee.id,
     )
 
     const newCart = produce(cartItems, (draft) => {
@@ -60,11 +60,11 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
 
   function changeCartItemQuantity(
     cartItemId: number,
-    type: 'increase' | 'decrease'
+    type: 'increase' | 'decrease',
   ) {
     const newCart = produce(cartItems, (draft) => {
       const coffeeExistsInCart = cartItems.findIndex(
-        (cartItem) => cartItem.id === cartItemId
+        (cartItem) => cartItem.id === cartItemId,
       )
 
       if (coffeeExistsInCart >= 0) {
@@ -81,7 +81,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
   function removeCartItem(cartItemId: number) {
     const newCart = produce(cartItems, (draft) => {
       const coffeeExistsInCart = cartItems.findIndex(
-        (cartItem) => cartItem.id === cartItemId
+        (cartItem) => cartItem.id === cartItemId,
       )
 
       if (coffeeExistsInCart >= 0) {

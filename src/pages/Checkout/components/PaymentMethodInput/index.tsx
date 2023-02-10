@@ -1,4 +1,3 @@
-import { CreditCard } from 'phosphor-react'
 import { ContentContainer, PaymentMethodContainer } from './styles'
 import { InputHTMLAttributes, ReactNode, forwardRef } from 'react'
 

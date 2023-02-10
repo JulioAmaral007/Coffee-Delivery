@@ -14,7 +14,7 @@ export const paymentMethods = {
     icon: <Bank size={16} />,
   },
   money: {
-    label: 'Cartão de Crédito',
+    label: 'Dinheiro',
     icon: <Money size={16} />,
   },
 }
