@@ -1,11 +1,11 @@
 import { InputHTMLAttributes, forwardRef } from 'react'
+import { RegularText } from '../Typograph'
 import {
   InputStyleContainer,
   InputStyled,
   InputWrapper,
   RightText,
 } from './styles'
-import { RegularText } from '../Typograph'
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
   error?: string

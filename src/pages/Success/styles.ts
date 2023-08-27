@@ -15,6 +15,15 @@ export const SuccessContainer = styled.div`
     align-items: center;
     justify-content: space-between;
   }
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    padding: 0 1rem;
+
+    img {
+      display: none;
+    }
+  }
 `
 
 export const SuccessDetailsContainer = styled.div`
@@ -34,5 +43,11 @@ export const SuccessDetailsContainer = styled.div`
     z-index: -1;
     border-radius: 7px 37px 7px 37px;
     background: linear-gradient(102.89deg, #dbac2c 2.61%, #8047f8 98.76%);
+  }
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    min-width: 2rem;
+    padding: 0 1rem;
   }
 `

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
 import { rgba } from 'polished'
+import styled from 'styled-components'
 import introBackgroundImg from '../../../../assets/intro-background.png'
 import { TitleText } from '../../../../components/Typograph'
 
@@ -24,10 +24,22 @@ export const IntroContent = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 3.5rem;
+
+  @media only screen and (max-width: 999px) {
+    text-align: center;
+    img {
+      display: none;
+    }
+  }
 `
 
 export const IntroTitle = styled(TitleText)`
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+  }
 `
 
 export const BenefitsContainer = styled.div`
@@ -36,4 +48,18 @@ export const BenefitsContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   row-gap: 1.25rem;
   margin-top: 4.125rem;
+
+  @media only screen and (max-width: 999px) {
+    column-gap: 1.25rem;
+    margin-top: 2.125rem;
+    padding-left: 3rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1.25rem;
+    margin-top: 1.125rem;
+    padding-left: 2rem;
+  }
 `

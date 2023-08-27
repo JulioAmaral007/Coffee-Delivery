@@ -1,5 +1,5 @@
-import { InfoWithIconContainer, IconContainer } from './styles'
 import { ReactNode } from 'react'
+import { IconContainer, InfoWithIconContainer } from './styles'
 
 interface BenefitItemProps {
   icon: ReactNode

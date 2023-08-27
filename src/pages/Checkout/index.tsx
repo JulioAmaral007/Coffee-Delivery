@@ -1,11 +1,11 @@
+import { zodResolver } from '@hookform/resolvers/zod'
+import { FormProvider, useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router-dom'
+import * as zod from 'zod'
+import { useCart } from '../../hooks/useCart'
 import { CheckoutForm } from './components/checkoutForm'
 import { SelectedCoffees } from './components/selectedCoffees'
 import { CheckoutContainer } from './styles'
-import * as zod from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useForm, FormProvider } from 'react-hook-form'
-import { useNavigate } from 'react-router-dom'
-import { useCart } from '../../hooks/useCart'
 
 enum PaymentMethods {
   credit = 'credit',
@@ -49,7 +49,6 @@ export function Checkout() {
 
   return (
     <FormProvider {...checkoutForm}>
-      {' '}
       <CheckoutContainer
         className="container"
         onSubmit={handleSubmit(handleSuccess)}

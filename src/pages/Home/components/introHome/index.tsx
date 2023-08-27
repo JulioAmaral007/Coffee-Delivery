@@ -1,14 +1,14 @@
+import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
+import { useTheme } from 'styled-components'
+import IntroCoffe from '../../../../assets/cafe-home.png'
+import { RegularText } from '../../../../components/Typograph'
+import { InfoWithIcon } from '../../../../components/infoWithIcon'
 import {
   BenefitsContainer,
   IntroContainer,
   IntroContent,
   IntroTitle,
 } from './styles'
-import IntroCoffe from '../../../../assets/cafe-home.png'
-import { RegularText } from '../../../../components/Typograph'
-import { InfoWithIcon } from '../../../../components/infoWithIcon'
-import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
-import { useTheme } from 'styled-components'
 
 export function IntroHome() {
   const { colors } = useTheme()

@@ -6,6 +6,11 @@ export const CheckoutFormContainer = styled.div`
   flex-direction: column;
   gap: 0.75rem;
   width: 40rem;
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    padding: 0 1rem;
+  }
 `
 
 export const FormSectionContainer = styled(SectionBaseStyle)`
@@ -34,6 +39,11 @@ export const AddressFormContainer = styled.div`
   .complement {
     grid-column: span 2;
   }
+
+  @media only screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
 `
 export const PaymentMethodOptionsContainer = styled.div`
   display: grid;
@@ -43,5 +53,9 @@ export const PaymentMethodOptionsContainer = styled.div`
   > p {
     grid-column: span 3;
     color: ${(props) => props.theme.colors['base-error']};
+  }
+
+  @media only screen and (max-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `

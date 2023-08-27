@@ -1,8 +1,8 @@
-import LogoCoffee from '../../assets/Logo.svg'
 import { MapPin, ShoppingCart } from 'phosphor-react'
-import { HeaderButton, HeaderButtonsContainer, HeaderContainer } from './styles'
 import { NavLink } from 'react-router-dom'
+import LogoCoffee from '../../assets/Logo.svg'
 import { useCart } from '../../hooks/useCart'
+import { HeaderButton, HeaderButtonsContainer, HeaderContainer } from './styles'
 
 export function Header() {
   const { cartQuantity } = useCart()

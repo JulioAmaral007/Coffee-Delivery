@@ -18,6 +18,14 @@ export const HeaderContainer = styled.header`
     align-items: center;
     justify-content: space-between;
   }
+
+  @media only screen and (max-width: 999px) {
+    padding: 0 2rem;
+  }
+
+  @media only screen and (max-width: 500px) {
+    padding: 0 1rem;
+  }
 `
 
 export const HeaderButtonsContainer = styled.div`

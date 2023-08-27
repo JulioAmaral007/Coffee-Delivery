@@ -1,13 +1,13 @@
-import { RegularText, TitleText } from '../../components/Typograph'
-import { SuccessContainer, SuccessDetailsContainer } from './styles'
-import coffeeSuccess from '../../assets/moto-delivery.svg'
-import { InfoWithIcon } from '../../components/infoWithIcon'
 import { CurrencyDollar, MapPin, Timer } from 'phosphor-react'
-import { useTheme } from 'styled-components'
+import { useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { useTheme } from 'styled-components'
+import coffeeSuccess from '../../assets/moto-delivery.svg'
+import { RegularText, TitleText } from '../../components/Typograph'
+import { InfoWithIcon } from '../../components/infoWithIcon'
 import { OrderData } from '../Checkout'
 import { paymentMethods } from '../Checkout/components/checkoutForm/paymentMethodOptions'
-import { useEffect } from 'react'
+import { SuccessContainer, SuccessDetailsContainer } from './styles'
 
 interface LocationType {
   state: OrderData
